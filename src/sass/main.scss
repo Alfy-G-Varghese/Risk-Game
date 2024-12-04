@@ -1,0 +1,70 @@
+@import "variables";
+@import "checkbox";
+@import "input-range";
+
+@font-face {
+  font-family: Zorque;
+  src: local('Zorque'), url(@/assets/zorque.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Vectroid;
+  src: local('Vectroid'), url(@/assets/vectroid.ttf) format("truetype");
+}
+
+
+@font-face {
+  font-family: 'Rexlia';
+  src: local('Rexlia'), url(@/assets/rexlia.otf) format('opentype');
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background;
+  color: $text;
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+h1 {
+  font-family: $title-font-family;
+  font-size: $title-font-size;
+  color: $lines;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  color: $text;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+a {
+  color: $accent;
+
+  &:hover {
+    color: $text;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
